@@ -12,7 +12,7 @@ function timerInit(timerSelector, hoursSelector, minutesSelector, secondsSelecto
     let minutesElement = timerContainer.querySelector(minutesSelector);
     let secondsElement = timerContainer.querySelector(secondsSelector);
 
-    let timerIntervalId = setInterval(updateTimer, 1000);
+    let timerIntervalId = setInterval(updateTimer, 1000, deadline);
 
     function updateTimer(deadline) {
         let timeData = getRemainingTimeData(deadline);
